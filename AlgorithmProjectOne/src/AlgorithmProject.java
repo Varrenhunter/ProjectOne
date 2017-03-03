@@ -32,6 +32,7 @@ public class AlgorithmProject {
 	 * worst case: i=0,1
 	 * 			 : {9,8,7,6,5,4,3,2,1,0}
 	 * Should be n!
+	 * T(n)=(N-1)T(N-1)
 	 */
 	public static boolean ALG1(int[] A, int i) {
 		if (i == A.length ) {
@@ -68,6 +69,7 @@ public class AlgorithmProject {
 	 *            - integer
 	 *            
 	 *            2^n
+	 *            2T(N-1)
 	 */
 	public static void ALG2(int[] A, int[] B, int i) {
 		if (i >= A.length-1) {
@@ -94,7 +96,7 @@ public class AlgorithmProject {
 
 	public static void main(String args[]) {
 
-		int[] A = {9,8,7,6,5,4,3,2,1,0};//,4,3,2,1,0};
+		int[] A = {10,9,8,7,6,5,4,3,2,1,0};//,4,3,2,1,0};
 		int[] B = {0,0,0,0,0,0,0,0,0,0};//,0,0,0,0};
 		int i = 0;
 		//ALG2(A, B, i);
